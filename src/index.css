@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.herotext {
+    color: #ffffff;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heroparagraph {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 200;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.hero.min-h-screen.bg-base-200 {
+    background-image: url("images/three.jpg");
+    background-size: cover;
+    object-fit: cover;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.7em;
+    position: relative;
+    bottom: 20px;
+    left: 6px;
+    font-family: 'Squada One', cursive;
+}
+
+
+.stat-desc {
+    font-size: .772rem;
+}
+
+.logosvg {
+    width: 4rem;
+}
+
+.card.bordered {
+    border: #ccc solid 1px;
+    border-width: 1px !important;
+    margin-top: 25px;
+}
+
+input.input.input-bordered {
+    background-color: #ffffff;
+}
+
+.rounded-box {
+    border-radius: unset;
+}
+
+.card.bordered {
+    border-width: 7px;
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+}
+
+#blkdollar {
+    color: #47A88B;
+}
+
+.imagestyle {
+    margin: 20px 10px;
+    border-radius: 13px;
+    max-width: 94%;
+    height: 302px;
+}
+
+.login-button {
+    background-color: #111927;
+}
+
+.moveright {
+    position: relative;
+    left: 83%;
 }
