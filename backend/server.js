@@ -30,7 +30,7 @@ const creatorsRouter = require('./routes/creators');
 const sponsorsRouter = require('./routes/sponsors');
 const investorsRouter = require('./routes/investors');
 const contactRouter = require('./routes/contact');
-const inquries = require('./routes/businessInquiry');
+const inquiries = require('./routes/businessInquiry');
 const search = require('./routes/search');
 
 
@@ -41,7 +41,7 @@ app.use('sponsors', sponsorsRouter);
 app.use('investors', investorsRouter);
 app.use('contact', contactRouter);
 app.use('search', search);
-app.use('business', inquries);
+app.use('business', inquiries);
 
 
 //APP LISTEN
