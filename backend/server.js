@@ -35,14 +35,14 @@ const inquiriesRouter = require('./routes/businessInquiry');
 const searchRouter = require('./routes/search');
 
 
-app.use('dashboard', dashboardRouter);
-app.use("about", aboutRouter);
-app.use('creators', creatorsRouter);
-app.use('sponsors', sponsorsRouter);
-app.use('investors', investorsRouter);
-app.use('contact', contactRouter);
-app.use('search', searchRouter);
-app.use('business', inquiriesRouter);
+app.use('/dashboard', dashboardRouter);
+app.use("/about", aboutRouter);
+app.use('/creators', creatorsRouter);
+app.use('/sponsors', sponsorsRouter);
+app.use('/investors', investorsRouter);
+app.use('/contact', contactRouter);
+app.use('/search', searchRouter);
+app.use('/business', inquiriesRouter);
 
 
 //APP LISTEN

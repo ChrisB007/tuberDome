@@ -152,23 +152,13 @@ export default function Hero() {
                 across multiple categories. Sponsor their efforts today and reach more people through their videos.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
+                <p className="text-base font-medium text-gray-900">Sign up to start sponsoring today.</p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
-                  <label htmlFor="email" className="sr-only">
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
-                    placeholder="Enter your email"
-                  />
                   <button
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Notify me
+                    Sign Up
                   </button>
                 </form>
                 <p className="mt-3 text-sm text-gray-500">
