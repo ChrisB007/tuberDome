@@ -36,7 +36,7 @@ export default function Hero() {
               <rect x={0} y={0} width={4} height={4} className="text-red-600" fill="currentColor" />
             </pattern>
           </defs>
-          <rect y={72} width={640} height={640} className="makered"/>
+          <rect y={72} width={640} height={640} className="text-red-50" fill="currentColor" />
           <rect x={118} width={404} height={784} fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
         </svg>
       </div>
