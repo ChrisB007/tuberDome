@@ -148,8 +148,8 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                There are thousands of talented creators making great videos every week on YouTube, and we only represent ones with at least 300,000 subscribers spanning 
-                various categories. Sponsor them and reach more people through their videos.
+                There are thousands of talented creators making great videos every week on YouTube for millions to view. Our platform presents ones with at least 300,000 subscribers spanning 
+                across multiple categories. Sponsor them and reach more people through their videos.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
