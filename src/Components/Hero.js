@@ -140,7 +140,7 @@ export default function Hero() {
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
                 <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                  Coming soon
+                  One Platform that lets you
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-gray-900">Sponsor YouTube</span>
