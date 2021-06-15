@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="ml-10 space-x-4">
-                <a href="www.me.com" className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50">
+                <a href="/auth/google" className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50">
                     Login
                 </a>
             </div>

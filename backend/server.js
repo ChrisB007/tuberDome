@@ -8,6 +8,7 @@ const app = express();
 
 
 require('dotenv').config();
+require('./auth');
 
 const PORT = process.env.PORT || 4040;
 
@@ -15,6 +16,12 @@ const PORT = process.env.PORT || 4040;
 const rowdy = rowdyLogger.begin(app);
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+
+function isLoggedIn(req, res, next) {
+    req.user ? next() : res.sendStatus(401);
+}
 
 
 //DATABASE
@@ -33,6 +40,8 @@ const investorsRouter = require('./routes/investors');
 const contactRouter = require('./routes/contact');
 const inquiriesRouter = require('./routes/businessInquiry');
 const searchRouter = require('./routes/search');
+const failedRouter = require('./routes/failedlogin');
+const passport = require('./auth');
 
 
 app.use('/dashboard', dashboardRouter);
@@ -43,6 +52,19 @@ app.use('/investors', investorsRouter);
 app.use('/contact', contactRouter);
 app.use('/search', searchRouter);
 app.use('/inquiry', inquiriesRouter);
+app.use('/failed', failedRouter);
+
+
+app.get('/auth/google',
+  passport.authenticate('google', { scope:
+      [ 'email', 'profile' ] }
+));
+
+app.get( '/google/callback',
+    passport.authenticate( 'google', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/failed'
+}));
 
 
 //APP LISTEN

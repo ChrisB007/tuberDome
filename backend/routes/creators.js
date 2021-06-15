@@ -15,6 +15,23 @@ const youtube = google.youtube({
 //https://youtube.googleapis.com/youtube/v3/videoCategories?key=[YOUR_API_KEY]
 
 
+// What you will get in profile response ?
+
+//    id
+//    name
+//    displayName
+//    birthday
+//    relationship
+//    isPerson
+//    isPlusUser
+//    placesLived
+//    language
+//    emails
+//    gender
+//    picture
+//    coverPhoto
+
+
 
 const api_KEY  = process.env.YOUTUBE_API;
 
