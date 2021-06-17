@@ -23,6 +23,17 @@
     border-radius: 7px;
 }
 
+.pagesbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+    margin: 100px auto;
+    position: relative;
+    top: 84px;
+}
+
 
 .hero.min-h-screen.bg-base-200 {
     background-image: url("images/three.jpg");

@@ -2,11 +2,10 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
-import { about } from './pages/about'
 
 
 const navigation = [
-    { name: 'About', to: {about} },
+    { name: 'About', to: '/about' },
     { name: 'Sponsors', to: '/sponsor' },
     { name: 'Creators', to: '/creators' },
     { name: 'Contact Us', to: '/contact' },
@@ -66,7 +65,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:block md:ml-10 md:space-x-10">
                         {navigation.map((item) => (
-                        <Link key={item.name} to={item.url} className="font-medium text-gray-500 hover:text-gray-900">
+                        <Link key={item.name} to={item.to} className="font-medium text-gray-500 hover:text-gray-900">
                             {item.name}
                         </Link>
                         ))}

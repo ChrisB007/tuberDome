@@ -1,7 +1,10 @@
+import React from 'react';
+import Footer from "../../Components/Footer";
 
 export const SignUp = () => {
     return (
-      <div className="space-y-6">
+        <>
+      <div className="pagesbody space-y-6">
         <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
           <div className="md:grid md:grid-cols-3 md:gap-6">
             <div className="md:col-span-1">
@@ -344,6 +347,8 @@ export const SignUp = () => {
           </button>
         </div>
       </div>
+      < Footer />
+      </>
     )
   }
   
