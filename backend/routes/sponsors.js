@@ -1,3 +1,6 @@
-const router = require('express').Router();
+import express from 'express';
+import Sponsor from '../models/sponsors.js';
+const router = express.Router();
 
-module.exports = router;
+
+export default router;

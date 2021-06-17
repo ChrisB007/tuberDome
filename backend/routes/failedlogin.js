@@ -1,9 +1,10 @@
-const router = require('express').Router();
+import express from 'express';
+const router = express.Router()
 
 
-router.get('/failed', (req, res) => {
+router.get('/', (req, res) => {
     res.send('Sorry, login attempt failed. Please try again.')
 })
 
 
-module.exports = router;
+export default router;

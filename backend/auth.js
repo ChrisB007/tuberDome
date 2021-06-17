@@ -16,8 +16,8 @@ passport.use(new GoogleStrategy({
     passReqToCallback   : true
   },
   function(request, accessToken, refreshToken, profile, done) {
-    User.findOrCreate({ googleId: profile.id }, function (err, user) {
-      return done(err, user);
+    User.findOrCreate({ googleId: profile.id, username: profile.displayName, email: profile.email }, function (err, user) {
+      return done(err, user); //Handle error here
     });
   }
 ));
@@ -29,6 +29,7 @@ passport.serializeUser( (user, done) =>{
 passport.deserializeUser( (user, done) =>{
     done(null, user)
 })
+  
 
 
 

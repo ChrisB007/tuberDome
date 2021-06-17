@@ -19,11 +19,20 @@
     text-shadow: 2px 2px 4px #000000;
 }
 
+.herobox {
+    border-radius: 7px;
+}
+
 
 .hero.min-h-screen.bg-base-200 {
     background-image: url("images/three.jpg");
     background-size: cover;
     object-fit: cover;
+}
+
+.signupbutton {
+    margin-top: 7px !important;
+    cursor: pointer;
 }
 
 .logo {

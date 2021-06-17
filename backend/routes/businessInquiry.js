@@ -1,28 +1,29 @@
-const router = require('express').Router();
-let Campaign = require('../modelS/businessInq');
+import express from 'express';
+import Business from '../models/businessInq.js';
+const router = express.Router()
 
 
-router.get('/inquiry', async(req, res) =>{
+router.get('/', async(req, res) =>{
     try{
-        const campaign = await Campaign.find()
+        const campaign = await Business.find()
         res.json(campaign)
     } catch(err){
         console.log(err)
     }
 });
 
-router.get('/inquiry/:id', async(req, res) =>{
+router.get('/:id', async(req, res) =>{
     try{
-        const singleCampaign = await Campaign.findById(req.params.id)
+        const singleCampaign = await Business.findById(req.params.id)
         res.json(singleCampaign);
     } catch(err){
         console.log(err)
     }
 })
 
-router.patch('/inquiry/:id', async (req, res) => {
+router.patch('/:id', async (req, res) => {
     try{
-        const updateCampaign = await Campaign.findById(req.params.id)
+        const updateCampaign = await Business.findById(req.params.id)
         //Check for what changed
         const businessInq = await updateCampaign.save()
         res.json(businessInq)
@@ -32,9 +33,9 @@ router.patch('/inquiry/:id', async (req, res) => {
     }
 })
 
-router.delete('inquiry/:id', async(req, res) =>{
+router.delete('/:id', async(req, res) =>{
     try{
-        const deletCampaign = await Campaign.findById(req.params.id)
+        const deletCampaign = await Business.findById(req.params.id)
         const removeCampaign = deletCampaign.remove()
         res.json(removeCampaign)
 
@@ -44,8 +45,8 @@ router.delete('inquiry/:id', async(req, res) =>{
 })
 
 
-router.post("/inquiry", async (req, res) => {
-    const business = new Campaign({
+router.post("/add", async (req, res) => {
+    const business = new Business({
         campaign: req.body.campaign,
         full_name: req.body.full_name,
         email: req.body.email,
@@ -53,8 +54,8 @@ router.post("/inquiry", async (req, res) => {
         Product: req.body.product,
         subject: req.body.subject,
         message: req.body.message,
-        start_date: req.body.start_date,
-        end_date: req.body.end_date
+        start_date: Date.parse(req.body.start_date),
+        end_date: Date.parse(req.body.end_date)
     })
 
     try{
@@ -66,4 +67,4 @@ router.post("/inquiry", async (req, res) => {
     
 });
 
-module.exports = router;
+export default router;
