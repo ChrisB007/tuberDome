@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
                 <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                  One Platform that lets you
+                  Brands and Marketers
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-gray-900">Sponsor YouTube</span>
@@ -18,13 +18,13 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                There are thousands of talented creators making great videos every week on YouTube for millions to view, and we presents those with at least 300,000 subscribers each spanning 
-                across multiple categories. Sponsor their efforts today and reach more people through their videos.
+                There are thousands of talented creators making great videos every week on YouTube for millions to view, and we present those with at least <span className="boldtxt">300,000 subscribers</span> each spanning 
+                across <span className="boldtxt">multiple categories</span> that align with your brand. Sponsor their efforts today and reach more people through their videos.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">Sign up to start sponsoring today.</p>
                 <Link to='/sponsor-signup'>
-                  <div className="signupbutton mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
+                  <div className="signupbutton mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">
                     <p>Sign Up</p>
                   </div>
                 </Link>
@@ -37,7 +37,7 @@ export default function Hero() {
                 </p>
               </div>
             </div>
-            <div className="herobox mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+            <div className="herobox mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center bg-gradient-to-r from-yellow-400 via-red-500 to-red-900">
               <svg
                 className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden"
                 width={640}
@@ -64,7 +64,7 @@ export default function Hero() {
               <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                 <button
                   type="button"
-                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
                   <img

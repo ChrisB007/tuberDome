@@ -23,13 +23,22 @@
     border-radius: 7px;
 }
 
+.boldtxt {
+    font-weight: 800;
+}
+
+.text-margin {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .pagesbody {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80%;
+    align-items: flex-start;
+    width: 63%;
     flex-direction: column;
-    margin: 100px auto;
+    margin: 60px auto 100px;
     position: relative;
     top: 84px;
 }
