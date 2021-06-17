@@ -22,13 +22,13 @@ export const SignUp = () => {
                     </label>
                     <div className="mt-1 flex rounded-md shadow-sm">
                       <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
-                        http://
+                        https://
                       </span>
                       <input
                         type="text"
                         name="company_website"
                         id="company_website"
-                        className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                         placeholder="www.example.com"
                       />
                     </div>
@@ -53,7 +53,7 @@ export const SignUp = () => {
                 </div>
   
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">Photo</label>
+                  <label className="block text-sm font-medium text-gray-700">Photo | Logo</label>
                   <div className="mt-1 flex items-center space-x-5">
                     <span className="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
                       <svg className="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,8 @@ export const SignUp = () => {
                       name="first_name"
                       id="first_name"
                       autoComplete="given-name"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="Enter your first name"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -137,7 +138,8 @@ export const SignUp = () => {
                       name="last_name"
                       id="last_name"
                       autoComplete="family-name"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="Enter your last name"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -150,7 +152,8 @@ export const SignUp = () => {
                       name="email_address"
                       id="email_address"
                       autoComplete="email"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="Enter your email"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -179,7 +182,8 @@ export const SignUp = () => {
                       name="street_address"
                       id="street_address"
                       autoComplete="street-address"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="Address"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -191,7 +195,8 @@ export const SignUp = () => {
                       type="text"
                       name="city"
                       id="city"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="City"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -203,7 +208,8 @@ export const SignUp = () => {
                       type="text"
                       name="state"
                       id="state"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="State"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -216,7 +222,8 @@ export const SignUp = () => {
                       name="postal_code"
                       id="postal_code"
                       autoComplete="postal-code"
-                      className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      placeholder="Zip"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
