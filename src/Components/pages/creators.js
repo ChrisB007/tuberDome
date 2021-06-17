@@ -95,7 +95,7 @@ export const creators = () => {
               <p className="mt-6 text-gray-500">{tier.description}</p>
 
               {/* Feature list */}
-              <ul role="list" className="mt-6 space-y-6">
+              <ul className="mt-6 space-y-6">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex">
                     <CheckIcon className="flex-shrink-0 w-6 h-6 text-red-500" aria-hidden="true" />
