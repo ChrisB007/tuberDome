@@ -1,5 +1,5 @@
 
-export default function sponsorSignUp() {
+export const SignUp = () => {
     return (
       <div className="space-y-6">
         <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">

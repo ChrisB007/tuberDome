@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const about = () => {
+export const contact = () => {
     return (
         <div>
-            <h1>About page here</h1>
+            <h1>Contact page</h1>
         </div>
     )
 }

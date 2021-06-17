@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const about = () => {
+export const sponsors = () => {
     return (
         <div>
-            <h1>About page here</h1>
+            <h1>Sponsors</h1>
         </div>
     )
 }
