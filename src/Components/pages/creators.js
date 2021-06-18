@@ -59,16 +59,17 @@ export const creators = () => {
       Content Creators
       </h2>
       <p className="text-1xl text-margin">
-            If you have accumulated 300,000+ subscribers on your YouTube channel, chances are you are already here on TuberDome. You know how much it takes to put your videos together, the time and money you invest in making your videos entertaining as well as resourceful to your subscribers. 
-            We serve as Link liaison between your channels and marketers who would like to align their products or services with your channels.
+      If you have accumulated 300,000+ subscribers on your YouTube channel, chances are you are already here on TuberDome. You know how much it takes to put your videos together, the time 
+      and money you invest in making your videos entertaining as well as resourceful to your subscribers. We serve as Link liaison between your channels and marketers who would like to align their 
+      products or services with your channels.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">One less thing you have to worry about</p>
-            <p className="text-1xl">Sponsorships comes in various forms, it might be through financial support, product and/or services giveaways. Our services ensures that your channels
-            are best positioned for sponsorship with companies whose brands coincides with yours.
+            <p className="text-1xl">Sponsorships comes in various forms, it might be through financial support, product and/or services giveaways. Our services ensure that your channels are 
+            best positioned for sponsorship with companies whose brands coincides with yours.
             </p>
-            <p className="text-margin text-1xl">While you focus on being creative with your videos and growing your channels, doing the heavy lifting in regards to 
-            sponsorship is what we pride ourselves on - From finding and talking to potential sponsors, collecting and distributing payments on schedule, and providing measurable analytics, making sure the light never goes out on your channels is 
-            one of the values we bring to the table.
+            <p className="text-margin text-1xl">While you focus on being creative with your videos and growing your channels, doing the heavy lifting in regards to sponsorship is what we do best 
+            - From finding and talking to potential sponsors, collecting and distributing payments on schedule, and providing measurable analytics, making sure the light never goes 
+            out on your channels is one of the values we bring to the table.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Channel vs Video Sponsorships</p>
             <p className="text-1xl">Brands may choose to sponsor either your entire channel or one video.</p>
