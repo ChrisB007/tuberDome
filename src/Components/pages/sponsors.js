@@ -14,7 +14,7 @@ const features = [
     name: 'Budgeting',
     icon: CurrencyDollarIcon,
     description:
-      'Search and browse through channels in categories that aligns with your brand, view their affordable rates or begin negotiations by proposing your budget to them.',
+      'Search and browse through channels in categories that aligns with your brand, view their rates per subscriber and/or begin negotiations by proposing your budget.',
   },
   {
     name: 'Launch',

@@ -18,7 +18,7 @@ const pricing = {
       frequency: '/ Subscriber',
       description: 'A plan that scales with your rapidly growing business.',
       features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
-      cta: 'Join Us',
+      cta: 'Activate your account',
       mostPopular: true,
     },
     {
@@ -61,7 +61,7 @@ export const creators = () => {
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Rates and terms</p>
 
       {/* Tiers */}
-      <div className="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+      <div className="mt-10 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
         {pricing.tiers.map((tier) => (
           <div
             key={tier.title}
