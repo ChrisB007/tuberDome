@@ -45,7 +45,7 @@ export const SignUp = () => {
                       name="about"
                       rows={3}
                       className="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border border-gray-300 rounded-md"
-                      placeholder="About your brand"
+                      placeholder=" Tell us about your brand"
                       defaultValue={''}
                     />
                   </div>
@@ -223,7 +223,7 @@ export const SignUp = () => {
             type="submit"
             className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
           >
-            Join Now
+            Free Sign up
           </button>
         </div>
       </div>

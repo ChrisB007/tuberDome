@@ -17,7 +17,7 @@ const pricing = {
       frequency: '/ Subscriber',
       description: 'This slot is reserved for one-off video sponsorship opportunity.',
       features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
-      cta: 'Activate your account',
+      cta: 'Login to activate your account',
       mostPopular: true,
     },
     {
@@ -55,7 +55,8 @@ export const creators = () => {
             out on your channels is one of the values we bring to the table.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Channel vs Video Sponsorships</p>
-            <p className="text-1xl">Brands may choose to sponsor either your entire channel or one-off video.</p>
+            <p className="text-1xl">Brands may choose to sponsor either your entire channel or one-off video. Channel sponsors gets priority and prominent real estate on your videos and channel for the length of the
+            agreement whereas regular sponsors get you to talk about their products/ services according to the terms of the agreement. We have outlined some of the default terms below.</p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Rates and terms</p>
 
       {/* Tiers */}
