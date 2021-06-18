@@ -5,43 +5,28 @@ import Footer from '../Footer';
 const pricing = {
   tiers: [
     {
-      title: 'Freelancer',
-      price: 24,
-      frequency: '/month',
-      description: 'The essentials to provide your best work for clients.',
-      features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
-      cta: 'Monthly billing',
+      title: 'At Video start',
+      rate: "0.015 ",
+      frequency: '/ Subscriber',
+      description: 'This slot is reserved for Channel sponsorship whenever possible.',
+      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
       mostPopular: false,
     },
     {
-      title: 'Startup',
-      price: 32,
-      frequency: '/month',
+      title: 'Mid Video',
+      rate: "0.010",
+      frequency: '/ Subscriber',
       description: 'A plan that scales with your rapidly growing business.',
-      features: [
-        '25 products',
-        'Up to 10,000 subscribers',
-        'Advanced analytics',
-        '24-hour support response time',
-        'Marketing automations',
-      ],
-      cta: 'Monthly billing',
+      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
+      cta: 'Join Us',
       mostPopular: true,
     },
     {
-      title: 'Enterprise',
-      price: 48,
-      frequency: '/month',
+      title: 'End of Video',
+      rate: "0.05",
+      frequency: '/ Subscriber',
       description: 'Dedicated support and infrastructure for your company.',
-      features: [
-        'Unlimited products',
-        'Unlimited subscribers',
-        'Advanced analytics',
-        '1-hour, dedicated support response time',
-        'Marketing automations',
-        'Custom integrations',
-      ],
-      cta: 'Monthly billing',
+      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
       mostPopular: false,
     },
   ],
@@ -73,7 +58,7 @@ export const creators = () => {
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Channel vs Video Sponsorships</p>
             <p className="text-1xl">Brands may choose to sponsor either your entire channel or one video.</p>
-            <p className="mt-6 max-w-2xl text-xl text-gray-500">Rates and Payment terms</p>
+            <p className="mt-6 max-w-2xl text-xl text-gray-500">Rates and terms</p>
 
       {/* Tiers */}
       <div className="mt-24 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
@@ -90,7 +75,7 @@ export const creators = () => {
                 </p>
               ) : null}
               <p className="mt-4 flex items-baseline text-gray-900">
-                <span className="text-5xl font-extrabold tracking-tight">${tier.price}</span>
+                <span className="text-5xl font-extrabold tracking-tight">${tier.rate}</span>
                 <span className="ml-1 text-xl font-semibold">{tier.frequency}</span>
               </p>
               <p className="mt-6 text-gray-500">{tier.description}</p>
