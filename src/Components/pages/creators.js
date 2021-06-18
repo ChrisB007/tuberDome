@@ -8,15 +8,14 @@ const pricing = {
       title: 'At Video start',
       rate: "0.015 ",
       frequency: '/ Subscriber',
-      description: 'This slot is reserved for Channel sponsorship whenever possible.',
+      description: 'This slot is reserved for entire channel sponsorship opportunity.',
       features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
-      mostPopular: false,
     },
     {
       title: 'Mid Video',
       rate: "0.010",
       frequency: '/ Subscriber',
-      description: 'A plan that scales with your rapidly growing business.',
+      description: 'This slot is reserved for one-off video sponsorship opportunity.',
       features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
       cta: 'Activate your account',
       mostPopular: true,
@@ -25,9 +24,8 @@ const pricing = {
       title: 'End of Video',
       rate: "0.05",
       frequency: '/ Subscriber',
-      description: 'Dedicated support and infrastructure for your company.',
+      description: 'This slot is reserved for one-off video sponsorship opportunity.',
       features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
-      mostPopular: false,
     },
   ],
 }
@@ -57,7 +55,7 @@ export const creators = () => {
             out on your channels is one of the values we bring to the table.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Channel vs Video Sponsorships</p>
-            <p className="text-1xl">Brands may choose to sponsor either your entire channel or one video.</p>
+            <p className="text-1xl">Brands may choose to sponsor either your entire channel or one-off video.</p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">Rates and terms</p>
 
       {/* Tiers */}
@@ -92,7 +90,7 @@ export const creators = () => {
             </div>
 
             <Link to="#" className={classNames( tier.mostPopular ? 'bg-red-500 text-white hover:bg-red-600'
-                  : 'bg-red-50 text-red-700 hover:bg-red-100',
+                  : null,
                 'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
               )}
             >
