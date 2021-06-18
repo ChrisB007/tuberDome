@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 const navigation = [
-    { name: 'Sponsors', to: '/sponsors' },
-    { name: 'Creators', to: '/creators' },
+    { name: 'For Sponsors', to: '/sponsors' },
+    { name: 'For Creators', to: '/creators' },
     { name: 'Contact Us', to: '/contact' },
   ]
 
