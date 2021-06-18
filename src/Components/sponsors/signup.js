@@ -10,7 +10,7 @@ export const SignUp = () => {
             <div className="md:col-span-1">
               <h3 className="text-lg font-medium leading-6 text-gray-900">Profile</h3>
               <p className="mt-1 text-sm text-gray-500">
-                This information will be displayed publicly so be careful what you share.
+                This will be your public profile page.
               </p>
             </div>
             <div className="mt-5 md:mt-0 md:col-span-2">
@@ -45,7 +45,7 @@ export const SignUp = () => {
                       name="about"
                       rows={3}
                       className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
-                      placeholder="you@example.com"
+                      placeholder="About your brand"
                       defaultValue={''}
                     />
                   </div>
@@ -53,7 +53,7 @@ export const SignUp = () => {
                 </div>
   
                 <div>
-                  <label className="block text-sm font-medium text-gray-700">Photo | Logo</label>
+                  <label className="block text-sm font-medium text-gray-700">Logo</label>
                   <div className="mt-1 flex items-center space-x-5">
                     <span className="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
                       <svg className="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ export const SignUp = () => {
           <div className="md:grid md:grid-cols-3 md:gap-6">
             <div className="md:col-span-1">
               <h3 className="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-              <p className="mt-1 text-sm text-gray-500">Use a permanent address where you can receive mail.</p>
+              <p className="mt-1 text-sm text-gray-500">Let's get some details on who to contact and where they are located.</p>
             </div>
             <div className="mt-5 md:mt-0 md:col-span-2">
               <form action="#" method="POST">
@@ -173,20 +173,6 @@ export const SignUp = () => {
                     </select>
                   </div>
   
-                  <div className="col-span-6">
-                    <label htmlFor="street_address" className="block text-sm font-medium text-gray-700">
-                      Street address
-                    </label>
-                    <input
-                      type="text"
-                      name="street_address"
-                      id="street_address"
-                      autoComplete="street-address"
-                      placeholder="Address"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                    />
-                  </div>
-  
                   <div className="col-span-6 sm:col-span-6 lg:col-span-2">
                     <label htmlFor="city" className="block text-sm font-medium text-gray-700">
                       City
@@ -227,113 +213,6 @@ export const SignUp = () => {
                     />
                   </div>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-  
-        <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
-          <div className="md:grid md:grid-cols-3 md:gap-6">
-            <div className="md:col-span-1">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">Notifications</h3>
-              <p className="mt-1 text-sm text-gray-500">Decide which communications you'd like to receive and how.</p>
-            </div>
-            <div className="mt-5 md:mt-0 md:col-span-2">
-              <form className="space-y-6" action="#" method="POST">
-                <fieldset>
-                  <legend className="text-base font-medium text-gray-900">By Email</legend>
-                  <div className="mt-4 space-y-4">
-                    <div className="flex items-start">
-                      <div className="h-5 flex items-center">
-                        <input
-                          id="comments"
-                          name="comments"
-                          type="checkbox"
-                          className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                        />
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="comments" className="font-medium text-gray-700">
-                          Comments
-                        </label>
-                        <p className="text-gray-500">Get notified when someones posts a comment on a posting.</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="candidates"
-                          name="candidates"
-                          type="checkbox"
-                          className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                        />
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="candidates" className="font-medium text-gray-700">
-                          Candidates
-                        </label>
-                        <p className="text-gray-500">Get notified when a candidate applies for a job.</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="offers"
-                          name="offers"
-                          type="checkbox"
-                          className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
-                        />
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="offers" className="font-medium text-gray-700">
-                          Offers
-                        </label>
-                        <p className="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <div>
-                    <legend className="text-base font-medium text-gray-900">Push Notifications</legend>
-                    <p className="text-sm text-gray-500">These are delivered via SMS to your mobile phone.</p>
-                  </div>
-                  <div className="mt-4 space-y-4">
-                    <div className="flex items-center">
-                      <input
-                        id="push_everything"
-                        name="push_notifications"
-                        type="radio"
-                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                      />
-                      <label htmlFor="push_everything" className="ml-3 block text-sm font-medium text-gray-700">
-                        Everything
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input
-                        id="push_email"
-                        name="push_notifications"
-                        type="radio"
-                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                      />
-                      <label htmlFor="push_email" className="ml-3 block text-sm font-medium text-gray-700">
-                        Same as email
-                      </label>
-                    </div>
-                    <div className="flex items-center">
-                      <input
-                        id="push_nothing"
-                        name="push_notifications"
-                        type="radio"
-                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                      />
-                      <label htmlFor="push_nothing" className="ml-3 block text-sm font-medium text-gray-700">
-                        No push notifications
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
               </form>
             </div>
           </div>

@@ -63,7 +63,7 @@ export const creators = () => {
             We serve as Link liaison between your channels and marketers who would like to align their products or services with your channels.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">One less thing you have to worry about</p>
-            <p className="text-1xl">Sponsorships comes in various forms, it might be through financial support, product and/or services. Our services ensures that your channels
+            <p className="text-1xl">Sponsorships comes in various forms, it might be through financial support, product and/or services giveaways. Our services ensures that your channels
             are best positioned for sponsorship with companies whose brands coincides with yours.
             </p>
             <p className="text-margin text-1xl">While you focus on being creative with your videos and growing your channels, doing the heavy lifting in regards to 

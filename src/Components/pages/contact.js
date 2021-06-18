@@ -1,4 +1,3 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 
@@ -14,29 +13,14 @@ export const contact = () => {
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Get in touch</h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-              arcu.
+              Send us note, we are excited to hear from you.
             </p>
             <dl className="mt-8 text-base text-gray-500">
               <div>
-                <dt className="sr-only">Postal address</dt>
+                <dt className="sr-only">Location</dt>
                 <dd>
-                  <p>742 Evergreen Terrace</p>
-                  <p>Springfield, OR 12345</p>
-                </dd>
-              </div>
-              <div className="mt-6">
-                <dt className="sr-only">Phone number</dt>
-                <dd className="flex">
-                  <PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">+1 (555) 123-4567</span>
-                </dd>
-              </div>
-              <div className="mt-3">
-                <dt className="sr-only">Email</dt>
-                <dd className="flex">
-                  <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">support@example.com</span>
+                  <p className="font-medium text-gray-700">Location</p>
+                  <p>New York, NY</p>
                 </dd>
               </div>
             </dl>
