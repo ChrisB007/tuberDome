@@ -59,7 +59,7 @@ export const creators = () => {
       Content Creators
       </h2>
       <p className="text-1xl text-margin">
-            If you have accumulated 300,000 subscribers on YouTube, chances are you are already here on TuberDome. You know how much it takes to put your videos together, the time and money you invest in making your videos entertaining as well as resourceful to your subscribers. 
+            If you have accumulated 300,000+ subscribers on your YouTube channel, chances are you are already here on TuberDome. You know how much it takes to put your videos together, the time and money you invest in making your videos entertaining as well as resourceful to your subscribers. 
             We serve as Link liaison between your channels and marketers who would like to align their products or services with your channels.
             </p>
             <p className="mt-6 max-w-2xl text-xl text-gray-500">One less thing you have to worry about</p>
