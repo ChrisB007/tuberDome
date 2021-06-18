@@ -1,41 +1,41 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { CalendarIcon, CheckIcon, PlusIcon, UsersIcon, ViewBoardsIcon, ViewListIcon } from '@heroicons/react/outline';
+import { CalendarIcon, CurrencyDollarIcon, ChatAltIcon, ChartBarIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 
 const features = [
   {
-    name: 'List view',
-    icon: ViewListIcon,
+    name: 'Clear Communication',
+    icon: ChatAltIcon,
     description:
-      'Nunc Link, lacinia sed risus neque, arcu, rhoncus. Id mauris justo facilisis aliquam platea vestibulum condimentum morbi.',
+      'When it comes to getting the word out, communication is king. We provide easy process for you to onboard and educate the sponsored party about your brand, products and services.',
   },
   {
-    name: 'Boards',
-    icon: ViewBoardsIcon,
+    name: 'Budgeting',
+    icon: CurrencyDollarIcon,
     description:
-      'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra Link varius urna rhoncus, tempor rutrum.',
+      'Search and browse through channels in categories that aligns with your brand, view their affordable rates or begin negotiations by proposing your budget to them.',
   },
   {
-    name: 'Calendar',
+    name: 'Launch',
     icon: CalendarIcon,
     description:
-      'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra Link varius urna rhoncus, tempor rutrum.',
+      'Plan and coordinate campaign / messaging with sponsored party, and set campaign launch date accordingly with useful tools.',
   },
   {
-    name: 'Teams',
-    icon: UsersIcon,
+    name: 'Measurable Success',
+    icon: ChartBarIcon,
     description:
-      'Tincidunt sollicitudin interdum nunc sit risus at bibendum vitae. Urna, quam ut sit justo non, consectetur et varius.',
+      'Monitor and measure success rate through clicks and user engagement via dashboard.',
   },
 ]
 const checklist = [
-  'Unlimited projects',
-  'No per user fees',
-  'Unlimited storage',
-  '24/7 support',
-  'Cancel any time',
-  '14 days free',
+  '1',
+  '2',
+  '3',
+  'Search Channels by categories',
+  'Find and Onboard Channel',
+  'Propose budget & Launch',
 ]
 
 export const sponsors = () => {
@@ -48,9 +48,9 @@ export const sponsors = () => {
       <div className="relative max-w-7xl mx-auto lg:px-8 lg:grid lg:grid-cols-2">
         <div className="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-0 lg:pr-8">
           <div className="max-w-lg mx-auto lg:mx-0">
-            <h2 className="text-base font-semibold tracking-wide text-red-600 uppercase">Full-featured</h2>
+            <h2 className="text-base font-semibold tracking-wide text-red-600 uppercase">Get the word out</h2>
             <p className="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">
-              Everything you need to talk with your customers
+              Everything you need to sponsor a bona fide YouTuber.
             </p>
             <dl className="mt-12 space-y-10">
               {features.map((feature) => (
@@ -70,46 +70,27 @@ export const sponsors = () => {
         <div className="bg-red-700 py-16 px-4 sm:py-24 sm:px-6 lg:bg-none lg:px-0 lg:pl-8 lg:flex lg:items-center lg:justify-end">
           <div className="max-w-lg mx-auto w-full space-y-8 lg:mx-0">
             <div>
-              <h2 className="sr-only">Price</h2>
-              <p className="relative grid grid-cols-2">
+              <p className="relative grid">
                 <span className="flex flex-col text-center">
-                  <span className="text-5xl font-extrabold text-white tracking-tight">$99</span>
-                  <span className="mt-2 text-base font-medium text-red-200">Setup fee</span>
-                  <span className="sr-only">plus</span>
-                </span>
-                <span
-                  className="pointer-events-none absolute h-12 w-full flex items-center justify-center"
-                  aria-hidden="true"
-                >
-                  <PlusIcon className="h-6 w-6 text-red-300" aria-hidden="true" />
-                </span>
-                <span>
-                  <span className="flex flex-col text-center">
-                    <span className="text-5xl font-extrabold text-white tracking-tight">$4</span>
-                    <span className="mt-2 text-base font-medium text-red-200">Per month</span>
-                  </span>
+                  <span className="text-5xl font-extrabold text-white tracking-tight">How it works</span>
                 </span>
               </p>
             </div>
-            <ul className="rounded overflow-hidden grid gap-px sm:grid-cols-2">
+            <ul className="rounded overflow-hidden grid gap-px sm:grid-cols-3">
               {checklist.map((item) => (
                 <li
                   key={item}
                   className="bg-red-800 bg-opacity-50 py-4 px-4 flex items-center space-x-3 text-base text-white"
                 >
-                  <CheckIcon className="h-6 w-6 text-red-300" aria-hidden="true" />
-                  <span>{item}</span>
+                  <span className="text-center">{item}</span>
                 </li>
               ))}
             </ul>
             <Link
-              to="#"
+              to="/sponsor-signup"
               className="bg-white border border-transparent rounded-md w-full px-8 py-4 flex items-center justify-center text-lg leading-6 font-medium text-red-600 hover:bg-red-50 md:px-10"
             >
-              Get started today
-            </Link>
-            <Link to="#" className="block text-center text-base font-medium text-red-200 hover:text-white">
-              Try Workflow Lite for free
+              Get a free account today
             </Link>
           </div>
         </div>

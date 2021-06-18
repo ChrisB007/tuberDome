@@ -28,7 +28,7 @@ export const SignUp = () => {
                         type="text"
                         name="company_website"
                         id="company_website"
-                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                         placeholder="www.example.com"
                       />
                     </div>
@@ -44,7 +44,7 @@ export const SignUp = () => {
                       id="about"
                       name="about"
                       rows={3}
-                      className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                      className="shadow-sm focus:ring-red-500 focus:border-red-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                       placeholder="About your brand"
                       defaultValue={''}
                     />
@@ -62,7 +62,7 @@ export const SignUp = () => {
                     </span>
                     <button
                       type="button"
-                      className="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      className="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                     >
                       Change
                     </button>
@@ -90,7 +90,7 @@ export const SignUp = () => {
                       <div className="flex text-sm text-gray-600">
                         <label
                           htmlFor="file-upload"
-                          className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                          className="relative cursor-pointer bg-white rounded-md font-medium text-red-600 hover:text-red-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-red-500"
                         >
                           <span>Upload a file</span>
                           <input id="file-upload" name="file-upload" type="file" className="sr-only" />
@@ -125,7 +125,7 @@ export const SignUp = () => {
                       id="first_name"
                       autoComplete="given-name"
                       placeholder="Enter your first name"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -139,7 +139,7 @@ export const SignUp = () => {
                       id="last_name"
                       autoComplete="family-name"
                       placeholder="Enter your last name"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -153,7 +153,7 @@ export const SignUp = () => {
                       id="email_address"
                       autoComplete="email"
                       placeholder="Enter your email"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -165,7 +165,7 @@ export const SignUp = () => {
                       id="country"
                       name="country"
                       autoComplete="country"
-                      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                     >
                       <option>United States</option>
                       <option>Canada</option>
@@ -182,7 +182,7 @@ export const SignUp = () => {
                       name="city"
                       id="city"
                       placeholder="City"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -195,7 +195,7 @@ export const SignUp = () => {
                       name="state"
                       id="state"
                       placeholder="State"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
   
@@ -209,7 +209,7 @@ export const SignUp = () => {
                       id="postal_code"
                       autoComplete="postal-code"
                       placeholder="Zip"
-                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -220,16 +220,10 @@ export const SignUp = () => {
   
         <div className="flex justify-end">
           <button
-            type="button"
-            className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            Cancel
-          </button>
-          <button
             type="submit"
-            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
           >
-            Save
+            Join Now
           </button>
         </div>
       </div>
