@@ -82,7 +82,7 @@ export const sponsors = () => {
                   key={item}
                   className="bg-red-800 bg-opacity-50 py-4 px-4 flex items-center space-x-3 text-base text-white"
                 >
-                  <span className="text-center">{item}</span>
+                  <span className="text-center aligntext">{item}</span>
                 </li>
               ))}
             </ul>

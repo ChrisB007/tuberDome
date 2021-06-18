@@ -23,6 +23,13 @@
     border-radius: 7px;
 }
 
+.aligntext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .boldtxt {
     font-weight: 800;
 }
