@@ -9,14 +9,14 @@ const pricing = {
       rate: "0.015 ",
       frequency: '/ Subscriber',
       description: 'This slot is reserved for entire channel sponsorship opportunity.',
-      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
+      features: ['Immediate Payout', 'Brand / Sponsor collaboration', 'Advance analytics', ' Channel Growth Hack'],
     },
     {
       title: 'Mid Video',
       rate: "0.010",
       frequency: '/ Subscriber',
       description: 'This slot is reserved for one-off video sponsorship opportunity.',
-      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
+      features: ['Immediate Payout', 'Brand / Sponsor collaboration', 'Advance analytics', ' Channel Growth Hack'],
       
     },
     {
@@ -24,7 +24,7 @@ const pricing = {
       rate: "0.05",
       frequency: '/ Subscriber',
       description: 'This slot is reserved for one-off video sponsorship opportunity.',
-      features: ['Immediate Payout', 'Brand Collaboration', 'Advance analytics', 'Growth'],
+      features: ['Immediate Payout', 'Brand / Sponsor collaboration', 'Advance analytics', ' Channel Growth Hack'],
       mostPopular: true,
       cta: 'Login to activate your account'
     },

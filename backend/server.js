@@ -16,12 +16,13 @@ import contactRouter from './routes/contact.js';
 import searchRouter from './routes/search.js';
 import failedRouter from './routes/failedlogin.js';
 import userRouter from './routes/users.js';
+import { Strategy as GoogleStrategy } from 'passport-google-oauth2';
 
 
 
 const app = express();
-
-// require('./auth');
+const google_Client = process.env.GOOGLE_CLIENT_ID;
+const google_Secret = process.env.GOOGLE_CLIENT_SECRET;
 
 const PORT = process.env.PORT || 4040;
 const session_SECRET = process.env.SESSION_SECRET;
@@ -32,7 +33,7 @@ app.use(passport.session());
 const rowdy = rowdyLogger.begin(app);
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(cors());
+app.use(cors({origin:'http://localhost:3000', credentials: true}));
 dotenv.config();
 app.use(session({ secret: session_SECRET, resave: true, saveUninitialized: true }));
 
@@ -47,7 +48,7 @@ mongoose.connect(userDB, {useNewUrlParser: true, useCreateIndex: true, useUnifie
     .catch((err) => console.log(err));
 
 
-
+//ROUTES    
 app.use('/dashboard', dashboardRouter);
 app.use("/about", aboutRouter);
 app.use('/creators', creatorsRouter);
@@ -58,6 +59,34 @@ app.use('/search', searchRouter);
 // app.use('/inquiry', inquiriesRouter);
 app.use('/failed', failedRouter);
 app.use('/users', userRouter);
+
+
+
+//Authentication
+
+passport.serializeUser( (user, done) =>{
+    done(null, user)
+})
+
+passport.deserializeUser( (user, done) =>{
+    done(null, user)
+})
+
+passport.use(new GoogleStrategy({
+    clientID:     google_Client,
+    clientSecret: google_Secret,
+    callbackURL: "/google/callback",
+    passReqToCallback   : true
+  },
+  function(request, accessToken, refreshToken, profile, done) {
+    //Uncomment below and Save users to DB here.
+    // User.findOrCreate({ googleId: profile.id, username: profile.displayName, email: profile.email }, function (err, user) {
+    //   return done(err, user); //Handle error here
+    // });
+    console.log(profile);
+    done(null, profile);
+  }
+));
 
 
 app.get('/auth/google',

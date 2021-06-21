@@ -1,7 +1,38 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 
-export const contact = () => {
+export const Contact = () => {
+  const [contactus, setContactus] = useState({
+
+    fullName: " ",
+    email: " ",
+    subject: " ",
+    message: " "
+  })
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    console.log(e.target.value)
+  }
+
+  const handleFullName = (e) =>{
+    setContactus({ ...contactus, fullName: e.target.value })
+  }
+
+  const handleEmail = (e) => {
+    setContactus( { ...contactus, email: e.target.email})
+  }
+
+  const handleSubject = (e) =>{
+    setContactus({ ...contactus, subject: e.target.subject})
+  }
+
+  const handleMessage = (e) => {
+    setContactus( { ...contactus, message: e.target.message})
+  }
+
   return (
       <>
     <div className="relative bg-white">
@@ -35,7 +66,7 @@ export const contact = () => {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Full name
@@ -47,6 +78,8 @@ export const contact = () => {
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                   placeholder="Full name"
+                  value={contactus.fullName}
+                  onChange={ handleFullName }
                 />
               </div>
               <div>
@@ -60,6 +93,8 @@ export const contact = () => {
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                   placeholder="Email"
+                  value={contactus.email}
+                  onChange={ handleEmail}
                 />
               </div>
               <div>
@@ -72,6 +107,8 @@ export const contact = () => {
                   id="subject"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                   placeholder="Subject"
+                  value={contactus.subject}
+                  onChange={handleSubject }
                 />
               </div>
               <div>
@@ -83,8 +120,10 @@ export const contact = () => {
                   name="message"
                   rows={4}
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border border-gray-300 rounded-md"
-                  placeholder="Message"
-                  defaultValue={''}
+                  placeholder=" Please =type your message to us here"
+                  value={contactus.message}
+                  onChange={handleMessage }
+
                 />
               </div>
               <div>

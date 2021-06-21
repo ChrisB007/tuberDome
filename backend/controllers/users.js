@@ -39,7 +39,7 @@ export async function updateUser(req, res) {
     });
 
     try{
-        const updatedUser = User.findByIdAndUpdate(req.params.id);
+        const updatedUser = await User.findByIdAndUpdate(req.params.id);
         const savedUpdates =  updatedUser.save()
         res.status(200).json(savedUpdates)
 
@@ -49,18 +49,15 @@ export async function updateUser(req, res) {
 }
 
 export async function createUser(req, res) {
-    const createUser = new User({
-        username: req.body.username,
-        email: req.body.email,
-        description: req.body.description
-    });
+    const createNewUser = req.body;
+    const newUser = new User(createNewUser);
 
     try{
-        const saveUser = await createUser.save()
+        const saveUser = await newUser.save()
         res.status(201).json(saveUser);
 
     } catch(err){
-        res.status(400).json(`Error: ${err}`);
+        res.status(409).json(`Error: ${err}`);
     }
 }
 
