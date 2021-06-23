@@ -1,37 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+import axios from 'axios';
 
 export const Contact = () => {
   const [contactus, setContactus] = useState({
-
     fullName: " ",
     email: " ",
     subject: " ",
     message: " "
   })
 
-  const handleSubmit = (e) =>{
+  //on Submit
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    await axios.post("http://localhost:4040/contact", contactus)
 
-    console.log(e.target.value)
   }
 
-  const handleFullName = (e) =>{
-    setContactus({ ...contactus, fullName: e.target.value })
-  }
 
-  const handleEmail = (e) => {
-    setContactus( { ...contactus, email: e.target.email})
-  }
-
-  const handleSubject = (e) =>{
-    setContactus({ ...contactus, subject: e.target.subject})
-  }
-
-  const handleMessage = (e) => {
-    setContactus( { ...contactus, message: e.target.message})
-  }
 
   return (
       <>
@@ -77,9 +64,9 @@ export const Contact = () => {
                   id="full_name"
                   autoComplete="name"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
-                  placeholder="Full name"
+                  placeholder="Enter your full name"
                   value={contactus.fullName}
-                  onChange={ handleFullName }
+                  onChange={(e) => {setContactus({ ...contactus, fullName: e.target.value})}}
                 />
               </div>
               <div>
@@ -92,9 +79,9 @@ export const Contact = () => {
                   type="email"
                   autoComplete="email"
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
-                  placeholder="Email"
+                  placeholder=""
                   value={contactus.email}
-                  onChange={ handleEmail}
+                  onChange={ (e) => { setContactus({ ...contactus, email: e.target.value})}}
                 />
               </div>
               <div>
@@ -108,7 +95,7 @@ export const Contact = () => {
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border-gray-300 rounded-md"
                   placeholder="Subject"
                   value={contactus.subject}
-                  onChange={handleSubject }
+                  onChange={ (e) =>{ setContactus({ ...contactus, subject: e.target.value})}}
                 />
               </div>
               <div>
@@ -122,8 +109,7 @@ export const Contact = () => {
                   className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-red-500 focus:border-red-500 border border-gray-300 rounded-md"
                   placeholder=" Please =type your message to us here"
                   value={contactus.message}
-                  onChange={handleMessage }
-
+                  onChange={ (e) => { setContactus({ ...contactus, message: e.target.value})}}
                 />
               </div>
               <div>

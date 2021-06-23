@@ -4,6 +4,7 @@ import {creators} from './Components/pages/creators';
 import { sponsors} from './Components/pages/sponsors';
 import { Contact } from './Components/pages/contact';
 import { SignUp } from './Components/sponsors/signup';
+import Dashboard from './dashboard/index'
 import Navbar from './Components/Navbar';
 import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route exact path='/sponsor-signup'>
             {SignUp}
+          </Route>
+          <Route id="dashboardID" exact path='/dashboard'>
+            <Dashboard />
           </Route>
         </Switch>
         </>

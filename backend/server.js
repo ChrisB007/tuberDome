@@ -99,6 +99,3 @@ app.get( '/google/callback',
         successRedirect: '/dashboard',
         failureRedirect: '/failed'
 }));
-
-
-//APP LISTEN

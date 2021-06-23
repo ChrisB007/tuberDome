@@ -13,7 +13,7 @@ import {
 } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
+  { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: true },
   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
   { name: 'Teams', href: '#', icon: UserGroupIcon, current: false },
   { name: 'Directory', href: '#', icon: SearchCircleIcon, current: false },
@@ -25,7 +25,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -178,7 +178,7 @@ export default function Example() {
               </nav>
             </div>
             <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-              <a href="#" className="flex-shrink-0 w-full group block">
+              <a href="www.me.com" className="flex-shrink-0 w-full group block">
                 <div className="flex items-center">
                   <div>
                     <img
