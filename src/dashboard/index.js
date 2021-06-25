@@ -1,39 +1,24 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ]
-  }
-  ```
-*/
-import { Fragment } from 'react'
-import { Menu, Popover, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { SearchIcon } from '@heroicons/react/solid'
+import { Fragment } from 'react';
+import { Menu, Popover, Transition } from '@headlessui/react';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { SearchIcon } from '@heroicons/react/solid';
+import Main from '../Components/feed';
+import Side from '../Components/sidebar';
 
 const user = {
   name: 'Chelsea Hagon',
   handle: 'chelseahagon',
   email: 'chelseahagon@example.com',
-  role: 'Human Resources Manager',
+  role: 'Human Timeline Manager',
   imageId: '1550525811-e5869dd03032',
   imageUrl:
     'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navLinks = [
   { title: 'Home', active: true },
-  { title: 'Profile', active: false },
-  { title: 'Resources', active: false },
-  { title: 'Company Directory', active: false },
-  { title: 'Openings', active: false },
+  { title: 'Your Profile', active: false },
+  { title: 'Timeline', active: false },
+  { title: 'Sponsorships', active: false }
 ]
 
 function classNames(...classes) {
@@ -60,6 +45,7 @@ export default function Example() {
                 <div className="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
                   <button
                     type="button"
+                    id="notify"
                     className="flex-shrink-0 p-1 text-indigo-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white"
                   >
                     <span className="sr-only">View notifications</span>
@@ -143,7 +129,7 @@ export default function Example() {
                       <input
                         id="search"
                         className="block w-full bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
-                        placeholder="Search Creators"
+                        placeholder="Search by Channel or Category"
                         type="search"
                         name="search"
                       />
@@ -192,7 +178,7 @@ export default function Example() {
                         <input
                           id="search"
                           className="block w-full bg-white bg-opacity-20 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 text-gray-900 placeholder-white focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-gray-500 focus:ring-0 sm:text-sm"
-                          placeholder="Search Creators"
+                          placeholder="Search by Channel or Category"
                           type="search"
                           name="search"
                         />
@@ -259,25 +245,19 @@ export default function Example() {
                             href="http://www.me.com"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
-                            Profile
+                            Your Profile
                           </a>
                           <a
                             href="http://www.me.com"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
-                            Resources
+                            Timeline
                           </a>
                           <a
                             href="http://www.me.com"
                             className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
                           >
                             Company Directory
-                          </a>
-                          <a
-                            href="http://www.me.com"
-                            className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
-                          >
-                            Openings
                           </a>
                         </div>
                       </div>
@@ -338,7 +318,9 @@ export default function Example() {
                   Section title
                 </h2>
                 <div className="rounded-lg bg-white overflow-hidden shadow">
-                  <div className="p-6">{/* Your content */}</div>
+                  <div className="p-6">
+                    <Main />
+                  </div>
                 </div>
               </section>
             </div>
@@ -350,7 +332,19 @@ export default function Example() {
                   Section title
                 </h2>
                 <div className="rounded-lg bg-white overflow-hidden shadow">
-                  <div className="p-6">{/* Your content */}</div>
+                  <div className="p-6">
+                    <Side />
+                  </div>
+                </div>
+              </section>
+              <section aria-labelledby="section-2-title">
+                <h2 className="sr-only" id="section-2-title">
+                  Section title
+                </h2>
+                <div className="rounded-lg bg-white overflow-hidden shadow">
+                  <div className="p-6">
+                    <Side />
+                  </div>
                 </div>
               </section>
             </div>

@@ -76,12 +76,19 @@ label.sr-only {
     margin: auto;
 }
 
+.regtext {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .logo2 {
     color: #a70000;
     font-size: 1.7em;
     position: relative;
     display: flex;
     justify-content: center;
+    text-shadow: 2px 2px 4px #4c4c4c;
     bottom: 20px;
     left: 2px;
     font-family: 'Squada One', cursive;

@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 
-const userSchema = new Schema({
+const registerSchema = new Schema({
   channel_Name : {
       type: String,
       required: true,
@@ -30,31 +30,11 @@ const userSchema = new Schema({
       required: true,
       min: 6
   },
-  profileImage: {
-      type: String,
-      default: " "
-  },
-  coverImage: {
-      type: String,
-      default: " "
-  },
-  followers: {
-      type: Array,
-      default: []
-  },
-  following: {
-      type: Array,
-      default: []
-  },
-  isAdmin: {
-      type: Boolean,
-      default: false
-  }
 },
 {timestamps: true}
 
 )
 
-const User = mongoose.model("User", userSchema);
+const Register = mongoose.model("Register", registerSchema);
 
-export default User;
+export default Register;

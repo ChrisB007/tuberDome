@@ -9,14 +9,13 @@ import cors from 'cors';
 import dashboardRouter from './routes/dashboard.js';
 import aboutRouter  from './routes/about.js';
 import creatorsRouter from './routes/creators.js';
-// import sponsorsRouter from './routes/sponsors.js';
+import userAuth from './routes/auth.js';
 import investorsRouter from './routes/investors.js';
 import contactRouter from './routes/contact.js';
-// import inquiriesRouter from './routes/businessInquiry.js';
+import postRoute from './routes/posts';
 import searchRouter from './routes/search.js';
 import failedRouter from './routes/failedlogin.js';
 import userRouter from './routes/users.js';
-import userLogin from './routes/login';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth2';
 
 
@@ -24,7 +23,6 @@ import { Strategy as GoogleStrategy } from 'passport-google-oauth2';
 const app = express();
 const google_Client = process.env.GOOGLE_CLIENT_ID;
 const google_Secret = process.env.GOOGLE_CLIENT_SECRET;
-
 const PORT = process.env.PORT || 4040;
 const session_SECRET = process.env.SESSION_SECRET;
 
@@ -53,14 +51,13 @@ mongoose.connect(userDB, {useNewUrlParser: true, useCreateIndex: true, useUnifie
 app.use('/dashboard', dashboardRouter);
 app.use("/about", aboutRouter);
 app.use('/creators', creatorsRouter);
-// app.use('/sponsors', sponsorsRouter);
 app.use('/investors', investorsRouter);
 app.use('/contact', contactRouter);
 app.use('/search', searchRouter);
-// app.use('/inquiry', inquiriesRouter);
 app.use('/failed', failedRouter);
 app.use('/users', userRouter);
-app.use('./login', userLogin);
+app.use('/api/auth', userAuth);
+app.use('/posts', postRoute);
 
 
 
