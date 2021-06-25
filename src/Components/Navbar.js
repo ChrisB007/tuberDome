@@ -73,10 +73,10 @@ const Navbar = () => {
                     <div className="hidden md:block text-right">
                     <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                         <Link
-                     to="/auth/google"
+                     to="/login"
                         className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50"
                         >
-                        Log in
+                        Login
                         </Link>
                     </span>
                     </div>
@@ -122,10 +122,10 @@ const Navbar = () => {
                         ))}
                         </div>
                         <Link
-                     to="www.me.com"
+                     to="/login"
                         className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                         >
-                        Log in
+                        Login
                         </Link>
                     </div>
                     </Popover.Panel>

@@ -1,40 +1,50 @@
 import mongoose from 'mongoose';
-import findOrCreate from 'mongoose-findorcreate';
 const { Schema } = mongoose;
 
 
 const userSchema = new Schema({
-  googleId:{
-    type: String,
-    required: true,
-    unique: true
-  },
-  username:  {
+  userName : {
       type: String,
-      unique: true,
-      trim: true,
-      minlength: 3
+      required: true,
+      min:3,
+      max: 20,
+      unique: true
   },
   email: {
-    type: String,
-    unique: true,
-    required: true,
+      type: String,
+      required: true,
+      unique: true,
+      max:50
   },
-  description: {
-    type: String,
-    required: true,
+  password: {
+      type: String,
+      required: true,
+      min: 6
+  },
+  profileImage: {
+      type: String,
+      default: " "
+  },
+  coverImage: {
+      type: String,
+      default: " "
+  },
+  followers: {
+      type: Array,
+      default: []
+  },
+  following: {
+      type: Array,
+      default: []
+  },
+  isAdmin: {
+      type: Boolean,
+      default: false
   }
-  // coverPhoto: {
-  //   type: String,
-  //   required: true,
-  // }
-}, {
-    timestamps: true,
-}
-);
+},
+{timestamps: true}
 
-
-userSchema.plugin(findOrCreate);
+)
 
 const User = mongoose.model("User", userSchema);
 

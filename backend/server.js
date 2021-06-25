@@ -16,6 +16,7 @@ import contactRouter from './routes/contact.js';
 import searchRouter from './routes/search.js';
 import failedRouter from './routes/failedlogin.js';
 import userRouter from './routes/users.js';
+import userLogin from './routes/login';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth2';
 
 
@@ -59,6 +60,7 @@ app.use('/search', searchRouter);
 // app.use('/inquiry', inquiriesRouter);
 app.use('/failed', failedRouter);
 app.use('/users', userRouter);
+app.use('./login', userLogin);
 
 
 

@@ -73,6 +73,22 @@ label.sr-only {
     bottom: 20px;
     left: 6px;
     font-family: 'Squada One', cursive;
+    margin: auto;
+}
+
+.logo2 {
+    color: #a70000;
+    font-size: 1.7em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    left: 2px;
+    font-family: 'Squada One', cursive;
+}
+
+img#glogin {
+    width: 28px;
 }
 
 
@@ -82,6 +98,7 @@ label.sr-only {
 
 .logosvg {
     width: 4rem;
+    margin: auto;
 }
 
 .card.bordered {
