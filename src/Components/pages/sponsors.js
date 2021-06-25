@@ -2,6 +2,7 @@
 import { CalendarIcon, CurrencyDollarIcon, ChatAltIcon, ChartBarIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+import Navbar from '../Navbar';
 
 const features = [
   {
@@ -41,6 +42,7 @@ const checklist = [
 export const sponsors = () => {
   return (
       <>
+      <Navbar /> 
     <div className="relative bg-white">
       <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-red-700" />

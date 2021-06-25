@@ -1,6 +1,7 @@
 import { CheckIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+import Navbar from '../Navbar';
 
 const pricing = {
   tiers: [
@@ -38,6 +39,7 @@ function classNames(...classes) {
 export const creators = () => {
   return (
       <>
+      <Navbar /> 
     <div className="max-w-7xl mx-auto py-24 px-4 bg-white sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">
       Content Creators

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import axios from 'axios';
+import Navbar from '../Navbar';
 
 export const Contact = () => {
   const [contactus, setContactus] = useState({
@@ -12,16 +13,18 @@ export const Contact = () => {
   })
 
   //on Submit
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:4040/contact", contactus)
-
+    await axios.post("http://localhost:4040/contact", contactus).then(() =>{
+      //Wite function to auto send email here.
+    })
   }
 
 
 
   return (
       <>
+      <Navbar /> 
     <div className="relative bg-white">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />

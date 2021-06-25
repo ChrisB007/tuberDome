@@ -26,7 +26,7 @@ export const getOneContact = async (req, res) => {
 
 export const createContacts = async (req, res) => {
     const incomingContact = req.body;
-    const newContacts = new ContactData (incomingContact)
+    const newContacts = await new ContactData (incomingContact)
     try {
         const savedContact = await newContacts.save();
         res.status(201).json(savedContact)
@@ -39,8 +39,10 @@ export const createContacts = async (req, res) => {
 }
 
 export const updateContact = async (req, res) => {
+    const id = req.params.id;
     try {
-        
+        await ContactData.findByIdAndUpdate(id).exec();
+         
     } catch (error) {
         
     }
@@ -48,10 +50,12 @@ export const updateContact = async (req, res) => {
 }
 
 export const deleteContact = async (req, res) => {
+    const id = req.params.id;
     try {
-        
+        await ContactData.findByIdAndRemove(id).exec();
+        res.send("Successfully deleted.");
     } catch (error) {
-        
+        console.log(error)
     }
 }
 

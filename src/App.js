@@ -5,14 +5,12 @@ import { sponsors} from './Components/pages/sponsors';
 import { Contact } from './Components/pages/contact';
 import { SignUp } from './Components/sponsors/signup';
 import Dashboard from './dashboard/index'
-import Navbar from './Components/Navbar';
 import {  BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className="outer">
-        <Navbar />
         <>
         <Switch>
           <Route exact path='/'>

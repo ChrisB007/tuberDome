@@ -1,9 +1,11 @@
 import React from 'react';
 import Footer from "../../Components/Footer";
+import Navbar from '../Navbar';
 
 export const SignUp = () => {
     return (
         <>
+        <Navbar /> 
       <div className="pagesbody space-y-6">
         <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
           <div className="md:grid md:grid-cols-3 md:gap-6">
